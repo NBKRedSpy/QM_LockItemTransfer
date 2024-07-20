@@ -1,0 +1,7 @@
+{
+    "UniqueModName": "nbk_redspy_QM_LockItemTransfer",
+    "Assemblies": [
+        "QM_LockItemTransfer.dll"
+    ],
+    "Dependencies": []
+}

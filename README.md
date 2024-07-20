@@ -37,6 +37,10 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 
 # Change Log
+
+## 1.1.1
+* Fix for mod crashing for new users due to the config folder not being created.  Thank you to TheGentlingCone for reporting this.
+
 ## 1.1.0
 * Fixed Rules not filtering items when an action automatically unloads a weapon or an item is directly disassembled.  
 

@@ -27,6 +27,9 @@ namespace QM_LockItemTransfer
         [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
         {
+
+            Directory.CreateDirectory(ModPersistenceFolder);
+
             Config = ModConfig.LoadConfig(ConfigPath);
 
             ExcludeItemList = new ExcludeItemList(Path.Combine(ModPersistenceFolder, "ExcludeItems.txt"));

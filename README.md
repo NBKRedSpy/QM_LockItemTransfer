@@ -2,13 +2,13 @@
 
 ![thumbnail icon](media/thumbnail.png)
 
-Allows the user to prevent items from automatically being added to the inventory via the Corpse Recycle and Take All commands.
+Allows the user to mark items so they are not automatically transferred on the corpse recycle or take all commands.
 
-When on mission, press F9 when hovering over an item to add it to the blacklist.  Press F12 to clear out the blacklist.
+When on mission, press F9 when hovering over an item to add or remove it to the blacklist.  Press F12 to clear out the blacklist.
 
 The keys are configurable.
 
-The game's normal Ctrl + Click and dragging and dropping are not affected.
+The game's normal Ctrl + Click and drag and drop not affected.
 
 # Polish
 

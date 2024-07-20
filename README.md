@@ -36,10 +36,14 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 
-# Credits
+# Change Log
+## 1.1.0
+* Fixed Rules not filtering items when an action automatically unloads a weapon or an item is directly disassembled.  
 
+# Credits
 
 
 [Denied icons created by Alfredo Creates - Flaticon](https://www.flaticon.com/free-icons/denied")
 
 [Move icons created by Shashank Singh - Flaticon](https://www.flaticon.com/free-icons/move")
+

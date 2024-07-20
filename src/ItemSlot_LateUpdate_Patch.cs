@@ -29,12 +29,12 @@ namespace QM_LockItemTransfer
             string id = __instance.Item?.Id;
             if (id == null) return;
 
-            Debug.Log($"Trying : {id}");
+            //Debug.Log($"Trying : {id}");
 
             bool removed;
             if (!(removed = Plugin.ExcludeItemList.Items.Remove(id)))
             {
-                Debug.Log($"Adding : {id}");
+                //Debug.Log($"Adding : {id}");
                 Plugin.ExcludeItemList.Items.Add(id);
             }
 

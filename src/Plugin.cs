@@ -32,7 +32,11 @@ namespace QM_LockItemTransfer
             ExcludeItemList = new ExcludeItemList(Path.Combine(ModPersistenceFolder, "ExcludeItems.txt"));
             ExcludeItemList.Load();
 
-            new Harmony("nbk_redspy_" + ModAssemblyName).PatchAll();
+            Harmony harmony = new Harmony("nbk_redspy_" + ModAssemblyName);
+
+            PreventMovePatches.Patch(harmony);
+            harmony.PatchAll();
+
         }
 
 

@@ -4,7 +4,7 @@
 
 Allows the user to mark items so they are not automatically transferred on the corpse recycle or take all commands.
 
-When on mission, press F9 when hovering over an item to add or remove it to the blacklist.  Press F12 to clear out the blacklist.
+When on mission, press F9 when hovering over an item to add or remove it to the blacklist.  Press F11 to clear out the blacklist.
 
 The keys are configurable.
 

@@ -61,7 +61,7 @@ namespace QM_LockItemTransfer
         [Hook(ModHookType.DungeonUpdateAfterGameLoop)]
         public static void DungeonUpdateAfterGameLoop(IModContext context)
         {
-            if(Input.GetKeyUp(Config.ClearItemListKey))
+            if(InputHelper.GetKeyDown(Config.ClearItemListKey))
             {
                 ExcludeItemList.Clear();
             }

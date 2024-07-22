@@ -18,7 +18,7 @@ namespace QM_LockItemTransfer
         public KeyCode LockItemKey { get; set; } = KeyCode.F9;
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public KeyCode ClearItemListKey { get; set; } = KeyCode.F12;
+        public KeyCode ClearItemListKey { get; set; } = KeyCode.F11;
 
         public static ModConfig LoadConfig(string configPath)
         {

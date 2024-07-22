@@ -60,6 +60,12 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 [h1]Change Log[/h1]
 
+[h2]1.2.1[/h2]
+[list]
+[*]Changed default "Clear" binding to F11 from F12 as it is also used by Steam to create a screenshot.  Thanks to Steam user Anton for reporting this.
+[*]Changed to use the MGSC.InputHelper instead of Unity's helper.  This is for compatibility purposes with the Context Menu Hotkeys mod since that mod needs to temporarily disable InputHelper for non context menu keys.
+[/list]
+
 [h2]1.2.0[/h2]
 [list]
 [*]Fixes amputations not being filtered.

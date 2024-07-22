@@ -29,7 +29,8 @@ namespace QM_LockItemTransfer
                 return;
             }
 
-            if (!Input.GetKeyUp(Plugin.Config.LockItemKey)) return;
+            
+            if (!InputHelper.GetKeyDown(Plugin.Config.LockItemKey)) return;
 
             string id = __instance.Item?.Id;
             if (id == null) return;

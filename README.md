@@ -38,6 +38,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 # Change Log
 
+## 1.2.0 
+* Fixes amputations not being filtered.
+
 ## 1.1.1
 * Fix for mod crashing for new users due to the config folder not being created.  Thank you to TheGentlingCone for reporting this.
 

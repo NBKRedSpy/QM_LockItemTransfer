@@ -14,6 +14,11 @@ namespace QM_LockItemTransfer
     internal static class ItemSlot_LateUpdate_Patch
     {
 
+
+        /// <summary>
+        /// Adds the "Add/Remove when hovering over item" functionality.
+        /// </summary>
+        /// <param name="__instance"></param>
         public static void Prefix(ItemSlot __instance)
         {
 

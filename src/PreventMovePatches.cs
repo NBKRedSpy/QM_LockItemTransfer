@@ -13,7 +13,14 @@ namespace QM_LockItemTransfer
 {
     public static class PreventMovePatches
     {
-
+        /// <summary>
+        /// Signals if the mod should prevent an item from being transferred.
+        /// This is a list of functions that have a call that attempts to put an item into a storage.
+        /// This is required as there are shared screens between the dungeon and other areas and only the dungeon
+        /// versions should be affected.
+        /// 
+        /// </summary>
+        /// <param name="harmony"></param>
         public static void Patch(Harmony harmony)
         {
             harmony.Patch(AccessTools.Method(typeof(InventoryScreen), nameof(InventoryScreen.TakeAllFromCorpse)),
@@ -40,6 +47,12 @@ namespace QM_LockItemTransfer
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
+
+            harmony.Patch(AccessTools.Method(typeof(CorpseInventoryView), nameof(CorpseInventoryView.AmputateSlot)),
+                new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
+                new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
+                );
+
         }
 
         public static void Prefix(MethodBase __originalMethod)

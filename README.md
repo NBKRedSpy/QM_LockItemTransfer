@@ -26,7 +26,7 @@ The configuration file will be created on the first game run and can be found at
 |Name|Default|Description|
 |--|--|--|
 |LockItemKey|F9|The key to add or remove an item from the blacklist|
-|ClearItemListKey|F12|The key to clear out the blacklist|
+|ClearItemListKey|F11|The key to clear out the blacklist|
 
 # Support
 If you enjoy my mods and want to buy me a coffee, check out my [Ko-Fi](https://ko-fi.com/nbkredspy71915) page.

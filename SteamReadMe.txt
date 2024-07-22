@@ -42,7 +42,7 @@ The configuration file will be created on the first game run and can be found at
 [tr]
 [td]ClearItemListKey
 [/td]
-[td]F12
+[td]F11
 [/td]
 [td]The key to clear out the blacklist
 [/td]

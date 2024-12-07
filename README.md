@@ -21,7 +21,7 @@ I don't know if it's even possible to find a modified item in the field.  This i
 
 # Configuration
 
-The configuration file will be created on the first game run and can be found at `%AppData%\..\LocalLow\Magnum Scriptum Ltd\Quasimorph\QM_LockItemTransfer\config.json`.
+The configuration file will be created on the first game run and can be found at `%AppData%\..\LocalLow\Magnum Scriptum Ltd\Quasimorph_ModConfigs\QM_LockItemTransfer\config.json`.
 
 |Name|Default|Description|
 |--|--|--|
@@ -37,6 +37,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 
 # Change Log
+## 1.3.
+* Moved config file directory.
+
 ## 1.2.1
 * Changed default "Clear" binding to F11 from F12 as it is also used by Steam to create a screenshot.  Thanks to Steam user Anton for reporting this.
 * Changed to use the MGSC.InputHelper instead of Unity's helper.  This is for compatibility purposes with the Context Menu Hotkeys mod since that mod needs to temporarily disable InputHelper for non context menu keys.

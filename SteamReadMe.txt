@@ -21,7 +21,7 @@ I don't know if it's even possible to find a modified item in the field.  This i
 
 [h1]Configuration[/h1]
 
-The configuration file will be created on the first game run and can be found at [i]%AppData%\..\LocalLow\Magnum Scriptum Ltd\Quasimorph\QM_LockItemTransfer\config.json[/i].
+The configuration file will be created on the first game run and can be found at [i]%AppData%\..\LocalLow\Magnum Scriptum Ltd\Quasimorph_ModConfigs\QM_LockItemTransfer\config.json[/i].
 [table]
 [tr]
 [td]Name
@@ -59,6 +59,11 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 [h1]Change Log[/h1]
+
+[h2]1.3.[/h2]
+[list]
+[*]Moved config file directory.
+[/list]
 
 [h2]1.2.1[/h2]
 [list]

@@ -8,16 +8,15 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Windows.Speech;
 using static QM_LockItemTransfer.Inventory_TakeOrEquip_Patch;
 
 namespace QM_LockItemTransfer
 {
     public static class Plugin
     {
-        public static string ModAssemblyName => Assembly.GetExecutingAssembly().GetName().Name;
 
-        public static string ConfigPath => Path.Combine(Application.persistentDataPath, ModAssemblyName, "config.json");
-        public static string ModPersistenceFolder => Path.Combine(Application.persistentDataPath, ModAssemblyName);
+        public static ConfigDirectories ConfigDirectories = new ConfigDirectories();
 
         public static ExcludeItemList ExcludeItemList { get; set; }
 
@@ -28,18 +27,21 @@ namespace QM_LockItemTransfer
         public static void AfterConfig(IModContext context)
         {
 
-            Directory.CreateDirectory(ModPersistenceFolder);
+            Directory.CreateDirectory(ConfigDirectories.AllModsConfigFolder);
+            ConfigDirectories = new ConfigDirectories();
+            ConfigDirectories.UpgradeModDirectory();
 
-            Config = ModConfig.LoadConfig(ConfigPath);
+            Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
 
-            ExcludeItemList = new ExcludeItemList(Path.Combine(ModPersistenceFolder, "ExcludeItems.txt"));
+            Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);
+
+            ExcludeItemList = new ExcludeItemList(Path.Combine(ConfigDirectories.ModPersistenceFolder, "ExcludeItems.txt"));
             ExcludeItemList.Load();
 
-            Harmony harmony = new Harmony("nbk_redspy_" + ModAssemblyName);
+            Harmony harmony = new Harmony("nbk_redspy_" + ConfigDirectories.ModAssemblyName);
 
             PreventMovePatches.Patch(harmony);
             harmony.PatchAll();
-
         }
 
 

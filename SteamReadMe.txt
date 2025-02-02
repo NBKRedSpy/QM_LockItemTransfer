@@ -60,7 +60,12 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 [h1]Change Log[/h1]
 
-[h2]1.3.[/h2]
+[h2]1.4.0[/h2]
+[list]
+[*]v0.8.5 compatible.
+[/list]
+
+[h2]1.3.0[/h2]
 [list]
 [*]Moved config file directory.
 [/list]

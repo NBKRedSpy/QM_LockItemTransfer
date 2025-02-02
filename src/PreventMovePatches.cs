@@ -28,12 +28,12 @@ namespace QM_LockItemTransfer
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
 
-            harmony.Patch(AccessTools.Method(typeof(CorpseInventoryView), nameof(CorpseInventoryView.DisassemblyAllItems)),
+            harmony.Patch(AccessTools.Method(typeof(CorpseInspectWindow), nameof(CorpseInspectWindow.DisassemblyAllItems)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
 
-            harmony.Patch(AccessTools.Method(typeof(ItemInteraction), nameof(ItemInteraction.Disassemble)),
+            harmony.Patch(AccessTools.Method(typeof(ItemInteractionSystem), nameof(ItemInteractionSystem.Disassemble)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
@@ -43,12 +43,12 @@ namespace QM_LockItemTransfer
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
 
-            harmony.Patch(AccessTools.Method(typeof(ItemInteraction), nameof(ItemInteraction.UnloadWeapon)),
+            harmony.Patch(AccessTools.Method(typeof(ItemInteractionSystem), nameof(ItemInteractionSystem.UnloadWeapon)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
 
-            harmony.Patch(AccessTools.Method(typeof(CorpseInventoryView), nameof(CorpseInventoryView.AmputateSlot)),
+            harmony.Patch(AccessTools.Method(typeof(CorpseInspectWindow), nameof(CorpseInspectWindow.AmputateSlot)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );

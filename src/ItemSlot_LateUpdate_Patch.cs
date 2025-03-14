@@ -24,7 +24,7 @@ namespace QM_LockItemTransfer
 
             if (!Inventory_TakeOrEquip_Patch.IsDungeonMode) return;
 
-            if (__instance.IsPointerInside == false || SingletonMonoBehaviour<UiCanvas>.Instance.DragController.IsDragging)
+            if (__instance.IsPointerInside == false || UI.Drag.IsDragging)
             {
                 return;
             }

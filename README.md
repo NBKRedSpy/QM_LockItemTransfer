@@ -2,6 +2,19 @@
 
 ![thumbnail icon](media/thumbnail.png)
 
+# Important - This version of the mod is only for the opt in beta version of the game!
+
+This is a temporary version that supports the 0.8.6 beta, and not the current game's version.
+For the non beta version of the game, use the mod of the same name without the BETA suffix.
+
+The non beta version *must* be uninstalled.  
+When the 0.8.6 becomes the main version, this mod will be deleted.
+Note that the beta is expected to change many times before release.
+As such, this mod may break on each beta release.
+
+# Docs
+
+
 Allows the user to mark items so they are not automatically transferred on the corpse recycle or take all commands.
 
 When on mission, press F9 when hovering over an item to add or remove it to the blacklist.  Press F11 to clear out the blacklist.
@@ -37,6 +50,11 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 
 # Change Log
+
+
+## 1.5.0
+* Version 0.8.6 compatibility
+
 ## 1.4.0
 * v0.8.5 compatible.
 

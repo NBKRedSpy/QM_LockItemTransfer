@@ -26,7 +26,7 @@ namespace QM_LockItemTransfer
             }
 
             //Note - the game's function has a count for the number of command buttons, 
-            //  but this is just checked for != to see if it needs to show the menu.
+            //  but this is just checked if it is not zero to see if it needs to show the menu.
             //
             //  The context menus that this mod is added to always has values,
             //  so no need to mess with the original function's count.

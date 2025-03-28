@@ -62,5 +62,24 @@ namespace QM_LockItemTransfer
             Items.Clear();
             Save();
         }
+
+        /// <summary>
+        /// Toggles the lock status of an item and saves the persistence data.
+        /// </summary>
+        /// <param name="id">The BasePickupItem's identifier string</param>
+        /// <returns>true if added</returns>
+        public bool ToggleAndSave(string id)
+        {
+            bool added = !Plugin.ExcludeItemList.Items.Remove(id);
+
+            if(added)
+            {
+                Plugin.ExcludeItemList.Items.Add(id);
+            }
+
+            Plugin.ExcludeItemList.Save();
+
+            return added;
+        }
     }
 }

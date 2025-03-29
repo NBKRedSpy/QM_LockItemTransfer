@@ -94,6 +94,11 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 [h1]Change Log[/h1]
 
+[h2]1.6.1[/h2]
+[list]
+[*]Moved Lock/Unlock menu item to the bottom of the list.
+[/list]
+
 [h2]1.6.0[/h2]
 [list]
 [*]Added context menu Lock/Unlock command

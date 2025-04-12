@@ -24,7 +24,7 @@ namespace QM_LockItemTransfer
 
             if (!Inventory_TakeOrEquip_Patch.IsDungeonMode) return;
 
-            if (__instance.IsPointerInside == false || SingletonMonoBehaviour<UiCanvas>.Instance.DragController.IsDragging)
+            if (__instance.IsPointerInside == false || UI.Drag.IsDragging)
             {
                 return;
             }
@@ -35,19 +35,8 @@ namespace QM_LockItemTransfer
             string id = __instance.Item?.Id;
             if (id == null) return;
 
-            //Debug.Log($"Trying : {id}");
-
-            bool removed;
-            if (!(removed = Plugin.ExcludeItemList.Items.Remove(id)))
-            {
-                //Debug.Log($"Adding : {id}");
-                Plugin.ExcludeItemList.Items.Add(id);
-            }
-
-            Plugin.ExcludeItemList.Save();
-
-            __instance._modifiedIcon.gameObject.SetActive(!removed);
-        }
+            ItemToggleUtility.ToggleAndSave(id, __instance);
+}
 
     }
 

@@ -53,6 +53,14 @@ namespace QM_LockItemTransfer
                 new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
                 );
 
+            //Handles Eat, which generally drops garbage such as plastic or a rib.
+            harmony.Patch(AccessTools.Method(typeof(InventoryScreen), nameof(InventoryScreen.PutConsumableInCharacter)),
+                new HarmonyMethod(typeof(PreventMovePatches), nameof(Prefix)),
+                new HarmonyMethod(typeof(PreventMovePatches), nameof(Postfix))
+                );
+
+
+
         }
 
         public static void Prefix(MethodBase __originalMethod)

@@ -58,36 +58,15 @@ Thanks!
 # Source Code
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
-
 # Change Log
+
+## 1.6.2
+* Fixed trash created from eating not being filtered.
 
 ## 1.6.1
 * Moved Lock/Unlock menu item to the bottom of the list.
 ## 1.6.0
 * Added context menu Lock/Unlock command
-
-## 1.5.0
-* Version 0.8.6 compatibility
-
-## 1.4.0
-* v0.8.5 compatible.
-
-## 1.3.0
-* Moved config file directory.
-
-## 1.2.1
-* Changed default "Clear" binding to F11 from F12 as it is also used by Steam to create a screenshot.  Thanks to Steam user Anton for reporting this.
-* Changed to use the MGSC.InputHelper instead of Unity's helper.  This is for compatibility purposes with the Context Menu Hotkeys mod since that mod needs to temporarily disable InputHelper for non context menu keys.
-
-
-## 1.2.0 
-* Fixes amputations not being filtered.
-
-## 1.1.1
-* Fix for mod crashing for new users due to the config folder not being created.  Thank you to TheGentlingCone for reporting this.
-
-## 1.1.0
-* Fixed Rules not filtering items when an action automatically unloads a weapon or an item is directly disassembled.  
 
 # Credits
 

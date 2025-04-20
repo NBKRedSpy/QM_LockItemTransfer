@@ -81,6 +81,11 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 
 [h1]Change Log[/h1]
 
+[h2]1.6.2[/h2]
+[list]
+[*]Fixed trash created from eating not being filtered.
+[/list]
+
 [h2]1.6.1[/h2]
 [list]
 [*]Moved Lock/Unlock menu item to the bottom of the list.
@@ -89,42 +94,6 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTr
 [h2]1.6.0[/h2]
 [list]
 [*]Added context menu Lock/Unlock command
-[/list]
-
-[h2]1.5.0[/h2]
-[list]
-[*]Version 0.8.6 compatibility
-[/list]
-
-[h2]1.4.0[/h2]
-[list]
-[*]v0.8.5 compatible.
-[/list]
-
-[h2]1.3.0[/h2]
-[list]
-[*]Moved config file directory.
-[/list]
-
-[h2]1.2.1[/h2]
-[list]
-[*]Changed default "Clear" binding to F11 from F12 as it is also used by Steam to create a screenshot.  Thanks to Steam user Anton for reporting this.
-[*]Changed to use the MGSC.InputHelper instead of Unity's helper.  This is for compatibility purposes with the Context Menu Hotkeys mod since that mod needs to temporarily disable InputHelper for non context menu keys.
-[/list]
-
-[h2]1.2.0[/h2]
-[list]
-[*]Fixes amputations not being filtered.
-[/list]
-
-[h2]1.1.1[/h2]
-[list]
-[*]Fix for mod crashing for new users due to the config folder not being created.  Thank you to TheGentlingCone for reporting this.
-[/list]
-
-[h2]1.1.0[/h2]
-[list]
-[*]Fixed Rules not filtering items when an action automatically unloads a weapon or an item is directly disassembled.
 [/list]
 
 [h1]Credits[/h1]

@@ -21,7 +21,7 @@ There are a couple of items to be addressed in the next update:
 This visually conflicts with anything that is found that is actually modified.
 I don't know if it's even possible to find a modified item in the field.  This is just a placeholder.
 
-* Sometimes the M icon isn't refreshed when marking items and then moving them.  The functionality works, but the UI is not updated.  Closing the inventory and opening it back up will display the correct marks.
+* If an item is toggled with the hotkey and there is more than one of that item, the other items will not have the M indicator refreshed.  They are correctly toggled, just not updated until that screen is refreshed in some way. The context menu command is not affected.
 
 # Configuration
 
@@ -59,6 +59,9 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 # Change Log
+
+## 1.6.3
+* Fixed M icon not being updated.  Only fixes the context menu command, not the hotkey.
 
 ## 1.6.2
 * Fixed trash created from eating not being filtered.

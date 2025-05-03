@@ -20,7 +20,7 @@ The "modified" icon (M) is used to indicate if something is blacklisted or not.
 This visually conflicts with anything that is found that is actually modified.
 I don't know if it's even possible to find a modified item in the field.  This is just a placeholder.
 [*]
-Sometimes the M icon isn't refreshed when marking items and then moving them.  The functionality works, but the UI is not updated.  Closing the inventory and opening it back up will display the correct marks.
+If an item is toggled with the hotkey and there is more than one of that item, the other items will not have the M indicator refreshed.  They are correctly toggled, just not updated until that screen is refreshed in some way. The context menu command is not affected.
 [/list]
 
 [h1]Configuration[/h1]
@@ -80,6 +80,11 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 [h1]Change Log[/h1]
+
+[h2]1.6.3[/h2]
+[list]
+[*]Fixed M icon not being updated.  Only fixes the context menu command, not the hotkey.
+[/list]
 
 [h2]1.6.2[/h2]
 [list]

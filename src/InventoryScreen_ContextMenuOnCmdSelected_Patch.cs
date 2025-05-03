@@ -20,8 +20,12 @@ namespace QM_LockItemTransfer
             //If the command is disabled, it just won't be shown.  No need to check for dungeon mode.
             if( (ContextMenuCommand) bindValue == ContextMenuCommand.Toggle)
             {
-                ItemToggleUtility.ToggleAndSave(__instance._contextMenuItemSlot.Item.Id, 
+                ItemToggleUtility.ToggleAndSave(__instance._contextMenuItemSlot.Item.Id,
                     __instance._contextMenuItemSlot);
+
+                __instance.RefreshItemsList(true);
+
+
             }
         }
     }

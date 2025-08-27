@@ -20,26 +20,27 @@ namespace QM_LockItemTransfer
         [JsonConverter(typeof(StringEnumConverter))]
         public KeyCode ClearItemListKey { get; set; } = KeyCode.F11;
 
+        private static JsonSerializerSettings SerializerSettings = new JsonSerializerSettings()
+        {
+            Formatting = Formatting.Indented,
+        };
+
+
         public static ModConfig LoadConfig(string configPath)
         {
             ModConfig config;
 
-            JsonSerializerSettings serializerSettings = new JsonSerializerSettings()
-            {
-                Formatting = Formatting.Indented,
-            };
 
             if (File.Exists(configPath))
             {
                 try
                 {
-                    config = JsonConvert.DeserializeObject<ModConfig>(File.ReadAllText(configPath), serializerSettings);
+                    config = JsonConvert.DeserializeObject<ModConfig>(File.ReadAllText(configPath), SerializerSettings);
                     return config;
                 }
                 catch (Exception ex)
                 {
-                    Debug.LogError("Error parsing configuration.  Ignoring config file and using defaults");
-                    Debug.LogException(ex);
+                    Plugin.Logger.LogError(ex,"Error parsing configuration.  Ignoring config file and using defaults");
 
                     //Not overwriting in case the user just made a typo.
                     config = new ModConfig();
@@ -50,13 +51,18 @@ namespace QM_LockItemTransfer
             {
                 config = new ModConfig();
 
-                string json = JsonConvert.SerializeObject(config, serializerSettings);
-                File.WriteAllText(configPath, json);
+                config.Save();
 
                 return config;
             }
 
 
+        }
+
+        public void Save()
+        {
+            string json = JsonConvert.SerializeObject(this, SerializerSettings);
+            File.WriteAllText(Plugin.ConfigDirectories.ConfigPath, json);
         }
     }
 }

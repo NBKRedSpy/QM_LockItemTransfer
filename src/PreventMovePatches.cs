@@ -70,7 +70,7 @@ namespace QM_LockItemTransfer
 
             Inventory_TakeOrEquip_Patch.PreventMoveLevel++;
 
-            //Debug.Log($"Prevent: {__originalMethod.DeclaringType} {__originalMethod.Name} {Inventory_TakeOrEquip_Patch.PreventMoveLevel}");
+            //Plugin.Logger.Log($"Prevent: {__originalMethod.DeclaringType} {__originalMethod.Name} {Inventory_TakeOrEquip_Patch.PreventMoveLevel}");
 
         }
 
@@ -80,7 +80,7 @@ namespace QM_LockItemTransfer
 
             Inventory_TakeOrEquip_Patch.PreventMoveLevel--;
 
-            //Debug.Log($"Prevent: {__originalMethod.DeclaringType} {__originalMethod.Name} {Inventory_TakeOrEquip_Patch.PreventMoveLevel}");
+            //Plugin.Logger.Log($"Prevent: {__originalMethod.DeclaringType} {__originalMethod.Name} {Inventory_TakeOrEquip_Patch.PreventMoveLevel}");
         }
     }
 

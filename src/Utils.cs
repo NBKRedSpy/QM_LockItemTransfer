@@ -54,9 +54,9 @@ namespace QM_LockItemTransfer
 
             if (useLog)
             {
-                if (useLog) Debug.Log("------------------------------------ Start IL");
-                Debug.Log(sb.ToString());
-                if (useLog) Debug.Log("------------------------------------ End IL");
+                if (useLog) Plugin.Logger.Log("------------------------------------ Start IL");
+                Plugin.Logger.Log(sb.ToString());
+                if (useLog) Plugin.Logger.Log("------------------------------------ End IL");
             }
             else 
             {

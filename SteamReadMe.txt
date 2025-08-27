@@ -75,11 +75,21 @@ Command 610000 toggles the lock.  The UI will show Lock/Unlock, but that is for 
 If you enjoy my mods and want to buy me a coffee, check out my [url=https://ko-fi.com/nbkredspy71915]Ko-Fi[/url] page.
 Thanks!
 
+[h1]Credits[/h1]
+[list]
+[*]Special thanks to Crynano for his excellent Mod Configuration Menu.
+[/list]
+
 [h1]Source Code[/h1]
 
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 [h1]Change Log[/h1]
+
+[h2]1.7.0[/h2]
+[list]
+[*]MCM integration.
+[/list]
 
 [h2]1.6.3[/h2]
 [list]

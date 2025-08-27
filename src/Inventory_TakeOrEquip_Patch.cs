@@ -28,11 +28,11 @@ namespace QM_LockItemTransfer
         public static bool Prefix(BasePickupItem item, ref bool __result)
         {
 
-            //Debug.Log($"Item: {item.Id}");
+            //Plugin.Logger.Log($"Item: {item.Id}");
             if (!IsDungeonMode || !PreventMove) return true;
 
 
-            //Debug.Log($"Item: contains check {item.Id}");
+            //Plugin.Logger.Log($"Item: contains check {item.Id}");
             if (Plugin.ExcludeItemList.Items.Contains(item.Id))
             {
                 __result = false;

@@ -57,12 +57,12 @@ namespace QM_LockItemTransfer
 
                 if (!Directory.Exists(oldDirectory)) return;
 
-                Debug.LogWarning($"Moving config folder from '{oldDirectory}' to '{ModPersistenceFolder}");
+                Plugin.Logger.LogWarning($"Moving config folder from '{oldDirectory}' to '{ModPersistenceFolder}");
                 Directory.Move(oldDirectory, ModPersistenceFolder);
             }
             catch (Exception ex)
             {
-                Debug.Log($"Unable to move the config files.  Exception: {ex.ToString()}");
+                Plugin.Logger.Log($"Unable to move the config files.  Exception: {ex.ToString()}");
             }
         }
     }

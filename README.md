@@ -50,16 +50,20 @@ For example, to use L, add the following text as the first entry in the `"Comman
 
 Command 610000 toggles the lock.  The UI will show Lock/Unlock, but that is for UI purposes.
 
-
 # Support
 If you enjoy my mods and want to buy me a coffee, check out my [Ko-Fi](https://ko-fi.com/nbkredspy71915) page.
 Thanks!
+
+# Credits
+* Special thanks to Crynano for his excellent Mod Configuration Menu. 
 
 # Source Code
 Source code is available on GitHub at https://github.com/NBKRedSpy/QM_LockItemTransfer
 
 # Change Log
 
+## 1.7.0 
+* MCM integration.
 ## 1.6.3
 * Fixed M icon not being updated.  Only fixes the context menu command, not the hotkey.
 
